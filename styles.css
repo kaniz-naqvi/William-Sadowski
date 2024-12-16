@@ -71,6 +71,9 @@ nav{
     border: inherit 1em solid !important;
     color: #0D6EFD;
 }
+section{
+    padding-top: 20px;
+}
 @media (max-width:900px){
     #hero{
         background-image: url(none);
