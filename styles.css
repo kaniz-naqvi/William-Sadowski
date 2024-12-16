@@ -1,0 +1,85 @@
+
+body{
+    overflow-x: hidden !important;
+}
+main {
+  font-family: "Times New Roman", Times, serif;
+}
+nav{
+    background-color: #fff;
+    position: fixed !important;
+    width: 98.5% !important;
+    z-index: 10;
+}
+.nav-link{
+    transition: all 0.5s ease-in-out !important;
+}
+.nav-link:hover{
+    border-bottom: #000 solid 1px !important;
+}
+.active{
+    color: black !important;
+    border-bottom: #000 solid 1px !important;
+}
+#hero, #Skills {
+  width: 100%;
+  min-height: 98vh;
+  overflow-y: auto;
+}
+#Skills {
+  background-image: url("images/skills.png");
+  background-size: 100% 100%; /* Image ko stretch karega */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card{
+    background-color: transparent;
+}
+.card i{
+ color: #4472c4;
+ font-size: 100px;
+}
+.dark-grey{
+    background-color: #595959;
+    color: #fff;
+    height: 61vh;
+}
+.dark-brown{
+    background-color: #684640;
+    height: 40vh;
+}
+.bg-grey{
+    background-color:  #c5c6c8;
+}
+#project .fs-5 li i {
+    margin-right: 10px;
+    color: #007bff; /* Change to any color that matches your design */
+}
+.card img{
+    max-width: 400px;
+    height: 200px;
+}
+@media (max-width:900px){
+    .cycle-img{
+        display: none;
+    }  
+    .card img{
+        max-width: 250px;
+        width: fit-content;
+    } 
+    #Skills {
+        background-image: none;
+    }
+    .dark-brown{
+       display: none;
+    }
+    .dark-grey{
+        background-color: transparent;
+        color:#000 ;
+        height: fit-content !important;
+        margin: 0 !important;
+    }
+    .card, .row, section, .py-5, .py-3{
+        padding: 4px !important;
+    }
+}
