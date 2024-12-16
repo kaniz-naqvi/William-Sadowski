@@ -1,28 +1,29 @@
-
-body{
-    overflow-x: hidden !important;
+* {
+  overflow-x: hidden !important;
 }
 main {
   font-family: "Times New Roman", Times, serif;
 }
-nav{
-    background-color: #fff;
-    position: fixed !important;
-    width: 100%;
-    z-index: 10;
-}
-.nav-link{
-    transition: all 0.5s ease-in-out !important;
-}
-.nav-link:hover{
-    border-bottom: #000 solid 1px !important;
-}
-.active{
-    color: black !important;
-    border-bottom: #000 solid 1px !important;
-}
-#hero, #Skills {
+nav {
+  background-color: #fff;
+  position: fixed !important;
   width: 100%;
+  z-index: 10;
+}
+.nav-link {
+  transition: all 0.5s ease-in-out !important;
+}
+.nav-link:hover {
+  border-bottom: #000 solid 1px !important;
+}
+.active {
+  color: black !important;
+  border-bottom: #000 solid 1px !important;
+}
+#hero,
+#Skills,
+#Experience {
+  width: 98%;
   min-height: 98vh;
   overflow-y: auto;
 }
@@ -32,76 +33,86 @@ nav{
   background-repeat: no-repeat;
   background-position: center;
 }
-.card{
-    background-color: transparent;
+.card {
+  background-color: transparent;
 }
-.card i{
- color: #4472c4;
- font-size: 100px;
+.card i {
+  color: #4472c4;
+  font-size: 100px;
 }
-.dark-grey{
-    background-color: #595959;
-    color: #fff;
-    height: 61vh;
+.card ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Optional: removes default left padding */
+  margin: 0; /* Optional: removes default margin */
 }
-.dark-brown{
-    background-color: #684640;
-    height: 40vh;
-    color: #fff;
+
+.dark-grey {
+  background-color: #595959;
+  color: #fff;
+  height: 61vh;
 }
-.bg-grey{
-    background-color:  #c5c6c8;
+.dark-brown {
+  background-color: #684640;
+  height: 40vh;
+  color: #fff;
+}
+.bg-grey {
+  background-color: #c5c6c8;
 }
 #project .fs-5 li i {
-    margin-right: 10px;
-    color: #007bff; /* Change to any color that matches your design */
+  margin-right: 10px;
+  color: #007bff; /* Change to any color that matches your design */
 }
-.card img{
-    max-width: 200px;
-    height: 100px;
+.card img {
+  max-width: 200px;
+  height: 100px;
 }
-.b-left{
-    border-left: #fff 5px solid;
+.b-left {
+  border-left: #fff 5px solid;
 }
-.btn{
-    transition: all 0.2s ease;
+.btn {
+  transition: all 0.2s ease;
 }
-.btn:hover{
+.btn:hover {
+  background-color: transparent;
+  border: inherit 1em solid !important;
+  color: #0d6efd;
+}
+section {
+  padding-top: 20px;
+}
+@media (max-width: 900px) {
+  #services {
+    background-image: none;
+  }
+  .cycle-img {
+    display: none;
+  }
+  .card img {
+    max-width: 250px;
+    width: fit-content;
+  }
+  #Skills {
+    background-image: none;
+  }
+  .dark-brown {
+    display: none;
+  }
+  .dark-grey {
     background-color: transparent;
-    border: inherit 1em solid !important;
-    color: #0D6EFD;
-}
-section{
-    padding-top: 20px;
-}
-@media (max-width:900px){
-    #services{
-        background-image: url(none);
-    }
-    .cycle-img{
-        display: none;
-    }  
-    .card img{
-        max-width: 250px;
-        width: fit-content;
-    } 
-    #Skills {
-        background-image: none;
-    }
-    .dark-brown{
-       display: none;
-    }
-    .dark-grey{
-        background-color: transparent;
-        color:#000 ;
-        height: fit-content !important;
-        margin: 0 !important;
-    }
-    .card, .row, section, .py-5, .py-3{
-        padding: 4px !important;
-    }
-    .b-left{
-        border-top: #fff 5px solid;
-        border-left: none;
-    }
+    color: #000;
+    height: fit-content !important;
+    margin: 0 !important;
+  }
+  .card,
+  .row,
+  .py-5,
+  section,
+  .py-3 {
+    padding: 4px !important;
+  }
+  .b-left {
+    border-top: #fff 5px solid;
+    border-left: none;
+  }
 }
