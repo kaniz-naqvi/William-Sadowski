@@ -8,7 +8,7 @@ main {
 nav{
     background-color: #fff;
     position: fixed !important;
-    width: 98.5% !important;
+    width: 100%;
     z-index: 10;
 }
 .nav-link{
@@ -26,7 +26,7 @@ nav{
   min-height: 98vh;
   overflow-y: auto;
 }
-#Skills {
+#services {
   background-image: url("images/skills.png");
   background-size: 100% 100%; /* Image ko stretch karega */
   background-repeat: no-repeat;
@@ -47,6 +47,7 @@ nav{
 .dark-brown{
     background-color: #684640;
     height: 40vh;
+    color: #fff;
 }
 .bg-grey{
     background-color:  #c5c6c8;
@@ -56,8 +57,11 @@ nav{
     color: #007bff; /* Change to any color that matches your design */
 }
 .card img{
-    max-width: 400px;
-    height: 200px;
+    max-width: 200px;
+    height: 100px;
+}
+.b-left{
+    border-left: #fff 5px solid;
 }
 @media (max-width:900px){
     .cycle-img{

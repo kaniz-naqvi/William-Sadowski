@@ -57,17 +57,17 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Skills">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#Experience">Experience</a>
             </li>
           </ul>
         </div>
@@ -93,7 +93,7 @@
       </section>
 
       <!-- Skills section -->
-      <section id="Skills" class="my-2 bg-white py-5">
+      <section id="services" class="my-2 bg-white py-5">
         <div class="container py-5">
           <div class="row py-5">
             <!-- Cards added using JS -->
@@ -101,7 +101,7 @@
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- skillss -->
       <section id="education" class="py-5">
         <div class="container">
           <div class="container">
@@ -135,23 +135,8 @@
               <!-- Third Column -->
               <div class="col-lg-4 py-3 col-md-6">
                 <div class="p-3 h-100 bg-grey fs-5">
-                  <ul class="pt-4 px-4">
-                    <li>
-                      BS in Mechanical Engineering (2024 – ongoing) <br />
-                      Nazeer Hussain University
-                    </li>
-                    <li>
-                      Advanced Mechanical Level 4 Course (2021) <br />
-                      The Hunar Foundation
-                    </li>
-                    <li>
-                      D.A.E. in Mechanical Engineering (2021) <br />
-                      Sindh Board of Technical Education
-                    </li>
-                    <li>
-                      Matriculation in Computer Science (2018) <br />
-                      Sindh Board of Karachi
-                    </li>
+                  <ul class="pt-4 px-4" id="education-ul">
+                    <!-- rebdered through js  -->
                   </ul>
                 </div>
               </div>
@@ -160,29 +145,27 @@
         </div>
       </section>
 
-      <!-- Project section 2 -->
-      <section id="project">
+      <!-- skills section 2 -->
+      <section id="skills">
         <div class="row px-5 py-2">
-          <div class="col-lg-8">
+          <!-- Adjust column widths for better distribution -->
+          <div class="col-lg-6 col-md-12">
             <h2 class="fs-1 fw-bold pt-5">Technical Skills</h2>
             <ul class="fs-5 py-3 px-3">
               <!-- Added through skills.js -->
             </ul>
           </div>
-          <div class="col-lg-3 py-5 px-4">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTplTo3dcxVpT2Ef0V7akfIwyqq5XDSOv8UCA&s"
-              class="image-fluid px-5"
-              height="300px"
-              alt="CNC Machine"
-            />
+          <div class="col-lg-6 col-md-12 px-4">
+            <h2 class="fs-1 text-center fw-bold pt-5">Computer Skills</h2>
+            <div class="row" id="comp-skills">
+              <!-- Added through welcome.js -->
+            </div>
           </div>
         </div>
-
-        <h2 class="fs-1 text-center fw-bold pt-5">Computer Skills</h2>
-        <div class="row" id="comp-skills">
-          <!-- Added through welcom.js -->
-        </div>
+      </section>
+      <!-- Experience -->
+      <section id="Experience">
+        <!-- Rendered through JS --> 
       </section>
     </main>
     <script src="script.js"></script>
