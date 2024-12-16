@@ -1,4 +1,4 @@
-* {
+body, section{
   overflow-x: hidden !important;
 }
 main {
@@ -21,11 +21,9 @@ nav {
   border-bottom: #000 solid 1px !important;
 }
 #hero,
-#Skills,
-#Experience {
+#Skills{
   width: 98%;
   min-height: 98vh;
-  overflow-y: auto;
 }
 #services {
   background-image: url("images/skills.png");
@@ -110,6 +108,9 @@ section {
   section,
   .py-3 {
     padding: 4px !important;
+  }
+  #Experience {
+    width: 99%;
   }
   .b-left {
     border-top: #fff 5px solid;
