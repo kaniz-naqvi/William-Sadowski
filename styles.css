@@ -63,7 +63,18 @@ nav{
 .b-left{
     border-left: #fff 5px solid;
 }
+.btn{
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    background-color: transparent;
+    border: inherit 1em solid !important;
+    color: #0D6EFD;
+}
 @media (max-width:900px){
+    #hero{
+        background-image: url(none);
+    }
     .cycle-img{
         display: none;
     }  
@@ -85,5 +96,9 @@ nav{
     }
     .card, .row, section, .py-5, .py-3{
         padding: 4px !important;
+    }
+    .b-left{
+        border-top: #fff 5px solid;
+        border-left: none;
     }
 }
