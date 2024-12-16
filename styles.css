@@ -75,7 +75,7 @@ section{
     padding-top: 20px;
 }
 @media (max-width:900px){
-    #hero{
+    #services{
         background-image: url(none);
     }
     .cycle-img{
