@@ -34,7 +34,7 @@ function renderSkills() {
   });
 
   // Append the new skill cards to the existing content
-  skillsContainer.innerHTML += skillCardsHTML; 
+  skillsContainer.innerHTML += skillCardsHTML;
 }
 
 renderSkills();
@@ -82,7 +82,7 @@ renderCompetencySkills();
 
 // Function to dynamically add skills-related skills to the 'skills' section
 function renderskillsSkills() {
-  let skillsSkillsContainer = document.querySelector('#skills ul');
+  let skillsSkillsContainer = document.querySelector("#skills ul");
   let skillsSkillsData = [
     {
       icon: `ri-settings-2-line`,
@@ -118,7 +118,7 @@ function renderskillsSkills() {
     },
   ];
 
-  let skillsSkillsHTML = ''; 
+  let skillsSkillsHTML = "";
   skillsSkillsData.forEach((skill) => {
     skillsSkillsHTML += `<li><i class="${skill.icon}"></i> ${skill.description}</li>`;
   });
@@ -127,30 +127,30 @@ function renderskillsSkills() {
 }
 
 renderskillsSkills();
- 
+
 // Function to dynamically add education list items
 function renderEducation() {
-  let educationContainer = document.querySelector('#education-ul');
+  let educationContainer = document.querySelector("#education-ul");
   let educationData = [
     {
-      degree: 'BS in Mechanical Engineering (2024 – ongoing)',
-      institution: 'Nazeer Hussain University',
+      degree: "BS in Mechanical Engineering (2024 – ongoing)",
+      institution: "Nazeer Hussain University",
     },
     {
-      degree: 'Advanced Mechanical Level 4 Course (2021)',
-      institution: 'The Hunar Foundation',
+      degree: "Advanced Mechanical Level 4 Course (2021)",
+      institution: "The Hunar Foundation",
     },
     {
-      degree: 'D.A.E. in Mechanical Engineering (2021)',
-      institution: 'Sindh Board of Technical Education',
+      degree: "D.A.E. in Mechanical Engineering (2021)",
+      institution: "Sindh Board of Technical Education",
     },
     {
-      degree: 'Matriculation in Computer Science (2018)',
-      institution: 'Sindh Board of Karachi',
-    }
+      degree: "Matriculation in Computer Science (2018)",
+      institution: "Sindh Board of Karachi",
+    },
   ];
 
-  let educationHTML = '';
+  let educationHTML = "";
   educationData.forEach((item) => {
     educationHTML += `
       <li>
@@ -164,8 +164,8 @@ function renderEducation() {
 
 renderEducation();
 
-let experience=document.querySelector('#Experience');
-experience.innerHTML=` <div class="row py-2">
+let experience = document.querySelector("#Experience");
+experience.innerHTML = ` <div class="row py-2">
           <!-- First Column for Professional Experience -->
           <div class="col-lg-3 py-5 px-5">
             <h1 class="text-center py-5 bg-dark text-white rounded-circle">
