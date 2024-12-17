@@ -44,14 +44,29 @@ function renderCompetencySkills() {
   let competencySkillsContainer = document.querySelector("#comp-skills");
   let competencySkillsData = [
     {
-      imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSUoRIrL6Tmov8Thj0cra7SG7-kiJEoLDLMQ&s`,
-      title: `Microsoft Office Suite`,
-      description: `MS Word, MS Excel, MS PowerPoint`,
+      imgSrc: `https://www.bhinneka.com/blog/wp-content/uploads/2022/07/Microsoft-Office-Word.webp`,
+      title: `MS Word`,
+      description: ``,
     },
     {
-      imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTp8_bdblzHqvri-w8XSeHQ9URtQcH3Kh-1A&s`,
+      imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGU1PZmf0KMijbU6nYM_yyRYmI_v3zit5K6CeG-rRnkBAFojuEXnbgHp1eePGccCvHwf4&usqp=CAU`,
+      title: `MS Excel`,
+      description: ``,
+    },
+    {
+      imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwB3fFFl3_7cKfimOjcEePNd31qW1hP_XwDA&s`,
+      title: "MS Powerpoint",
+      description: "",
+    },
+    {
+      imgSrc: `https://content.jdmagicbox.com/quickquotes/images_main/autocad-graphic-design-computer-and-laptop-software-2220643820-jihv4cuo.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit`,
+      title: "MS Powerpoint",
+      description: "",
+    },
+    {
+      imgSrc: `https://handwiki.org/wiki/images/5/51/Siemens_NX_Logo.png`,
       title: "UG NX12.0",
-      description: "CAD & CAM Programming",
+      description: "",
     },
   ];
 
@@ -59,13 +74,13 @@ function renderCompetencySkills() {
   competencySkillsData.forEach(
     (skill) =>
       (competencySkillsHTML += `
-        <div class="col-lg-6 col-md-6 mb-3">
-          <div class="card m-4">
-            <div class="card-body">
-              <span class="card-title d-flex justify-content-center">
+        <div class="col-lg-4 py-1 col-md-6">
+          <div class="card">
+            <div class="card-body py-1">
+              <span class="card-title d-flex px-4 justify-content-center">
                 <img src="${skill.imgSrc}" alt="">
               </span>
-              <p class="card-text text-center px-4">
+              <p class="card-text text-center">
                 <strong>${skill.title}</strong>
                 <br>
                 ${skill.description}
@@ -155,7 +170,11 @@ function renderEducation() {
     educationHTML += `
       <li>
         ${item.degree} <br />
+        <ul>
+        <li>
         ${item.institution}
+        </li>
+        </ul>
       </li>`;
   });
 
@@ -211,7 +230,7 @@ experience.innerHTML = ` <div class="row py-2">
               <div class="col-lg-12 mt-1 bg-grey">
                 <ul>
                   <li>
-                    <strong>Procon Engineering (Jan 2022 – Oct 2023)</strong><br />
+                    <strong><a href="images/certi.jpeg" target="_blank" class="text-black">Procon Engineering (Jan 2022 – Oct 2023)</a></strong><br />
                     <strong>CNC Shift Incharge</strong>
                     <ul>
                       <li>Cam Programming in Siemens NX 12.0.</li>
@@ -226,3 +245,69 @@ experience.innerHTML = ` <div class="row py-2">
             </div>
           </div>
         </div>`;
+// Function to dynamically add projects to the 'projects' section
+function renderProjects() {
+  let projects = document.querySelector('#projects .row');
+  let projectData = [
+    {
+      title: 'engraving operation of cf',
+      discrption: 'Advanced CF engraving operation delivering unmatched precision, seamless detailing, and exceptional durability.'
+    },
+    {
+      title: 'upper side  Die',
+      discrption: 'Advanced upper side die, designed for superior precision, durability, and flawless performance in critical operation.'
+    },
+    {
+      title: 'Assembly data prograssive Die  2 stations',
+      discrption: 'Two-station progressive die assembly for efficient and precise component manufacturing.'
+    },
+    {
+      title: 'Bending progressive Assembly Bending',
+      discrption: 'Two-station bending progressive die for streamlined, precise bending and shaping operations.'
+    },
+    {
+      title: 'Bike light cover with punch and civity',
+      discrption: 'Bike light cover with punching and cavity process for precise shaping and durability.'
+    },
+    {
+      title: 'Tank cover part',
+      discrption: 'Tank cover part designed for durability and perfect fit, ensuring optimal protection and performance.'
+    },
+    {
+      title: 'Tank cover part',
+      discrption: 'Tank cover part designed for durability and perfect fit, ensuring optimal protection and performance.'
+    },
+  ];
+
+  // Clear previous content
+  projects.innerHTML = '';
+
+  // Iterate over projectData and build HTML for each project
+  projectData.forEach(project => {
+    let projectHTML = `
+      <div class="col-lg-6">
+        <div class="card mb-3 border-0" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4 py-1">
+              <img src="images/${project.title}.jpeg" class="img-fluid" alt="${project.title}" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-uppercase">${project.title}</h5>
+                <p class="card-text">
+                  ${project.discrption}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Append the HTML for this project
+    projects.innerHTML += projectHTML;
+  });
+}
+
+// Call the function to render projects
+renderProjects();

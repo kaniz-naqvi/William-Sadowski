@@ -38,12 +38,19 @@ nav {
   color: #4472c4;
   font-size: 100px;
 }
+#skills ul i{
+  color: #4472c4;
+}
 .card ul {
   list-style-type: none; /* Removes bullet points */
   padding: 0; /* Optional: removes default left padding */
   margin: 0; /* Optional: removes default margin */
 }
-
+.img-fluid{
+  margin-top: 10px;
+  height: 130px !important;
+  max-width: 100% !important;
+}
 .dark-grey {
   background-color: #595959;
   color: #fff;
