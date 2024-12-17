@@ -49,7 +49,7 @@ nav {
 .img-fluid{
   margin-top: 10px;
   height: 130px !important;
-  max-width: 100% !important;
+  width: 100% !important;
 }
 .dark-grey {
   background-color: #595959;

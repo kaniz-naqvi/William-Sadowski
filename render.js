@@ -274,8 +274,8 @@ function renderProjects() {
       discrption: 'Tank cover part designed for durability and perfect fit, ensuring optimal protection and performance.'
     },
     {
-      title: 'Tank cover part',
-      discrption: 'Tank cover part designed for durability and perfect fit, ensuring optimal protection and performance.'
+      title: 'Banding Lower Die',
+      discrption: 'Precision-crafted banding lower die, ensuring optimal performance, durability, and reliability for mechanical applications.'
     },
   ];
 
