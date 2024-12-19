@@ -46,27 +46,22 @@ function renderCompetencySkills() {
     {
       imgSrc: `https://www.bhinneka.com/blog/wp-content/uploads/2022/07/Microsoft-Office-Word.webp`,
       title: `MS Word`,
-      description: ``,
     },
     {
       imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGU1PZmf0KMijbU6nYM_yyRYmI_v3zit5K6CeG-rRnkBAFojuEXnbgHp1eePGccCvHwf4&usqp=CAU`,
       title: `MS Excel`,
-      description: ``,
     },
     {
       imgSrc: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwB3fFFl3_7cKfimOjcEePNd31qW1hP_XwDA&s`,
       title: "MS Powerpoint",
-      description: "",
     },
     {
       imgSrc: `https://content.jdmagicbox.com/quickquotes/images_main/autocad-graphic-design-computer-and-laptop-software-2220643820-jihv4cuo.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit`,
-      title: "MS Powerpoint",
-      description: "",
+      title: "AutoCAD",
     },
     {
       imgSrc: `https://handwiki.org/wiki/images/5/51/Siemens_NX_Logo.png`,
       title: "UG NX12.0",
-      description: "",
     },
   ];
 
@@ -82,8 +77,6 @@ function renderCompetencySkills() {
               </span>
               <p class="card-text text-center">
                 <strong>${skill.title}</strong>
-                <br>
-                ${skill.description}
               </p>
             </div>
           </div>
@@ -182,132 +175,3 @@ function renderEducation() {
 }
 
 renderEducation();
-
-let experience = document.querySelector("#Experience");
-experience.innerHTML = ` <div class="row py-2">
-          <!-- First Column for Professional Experience -->
-          <div class="col-lg-3 py-5 px-5">
-            <h1 class="text-center py-5 bg-dark text-white rounded-circle">
-              Professional Experience
-            </h1>
-          </div>
-        
-          <!-- Second Column with Three Sub-columns (Each 4 out of 12 columns) -->
-          <div class="col-lg-8 m-1">
-            <div class="row d-flex">
-              <!-- First Sub-column for Brother Industries -->
-              <div class="col-lg-6 bg-grey p-3">
-                <ul>
-                  <li>
-                    <strong>Brother Industries (Dec 2023 – Ongoing)</strong><br />
-                    <strong>Supervisor of CNC Department</strong>
-                    <ul>
-                      <li>CNC Programming and working in Moulds.</li>
-                      <li>Reworking of Mould Jigs and Fixtures.</li>
-                      <li>Ensuring precision and accuracy in all projects.</li>
-                      <li>Collaborating with engineers and quality control teams to resolve issues.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-        
-              <!-- Second Sub-column for Dawood Engineering Pvt. Ltd. -->
-              <div class="col-lg-6 bg-grey p-3 b-left">
-                <ul>
-                  <li>
-                    <strong>Dawood Engineering Pvt. Ltd. (Apr 2021 – Dec 2021)</strong><br />
-                    <strong>CNC Operator</strong>
-                    <ul>
-                      <li>Handling CNC lathe and milling operations.</li>
-                      <li>Performing job dialing and offsetting.</li>
-                      <li>Managing manual programming and quality inspection.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-        
-              <!-- Third Sub-column for Procon Engineering -->
-              <div class="col-lg-12 mt-1 bg-grey">
-                <ul>
-                  <li>
-                    <strong><a href="images/certi.jpeg" target="_blank" class="text-black">Procon Engineering (Jan 2022 – Oct 2023)</a></strong><br />
-                    <strong>CNC Shift Incharge</strong>
-                    <ul>
-                      <li>Cam Programming in Siemens NX 12.0.</li>
-                      <li>Job dialing and offsetting.</li>
-                      <li>Managing manual programming.</li>
-                      <li>Supervising CNC operators for lathe and milling.</li>
-                      <li>Ensuring job quality inspection.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>`;
-// Function to dynamically add projects to the 'projects' section
-function renderProjects() {
-  let projects = document.querySelector('#projects .row');
-  let projectData = [
-    {
-      title: 'engraving operation of cf',
-      discrption: 'Advanced CF engraving operation delivering unmatched precision, seamless detailing, and exceptional durability.'
-    },
-    {
-      title: 'upper side  Die',
-      discrption: 'Advanced upper side die, designed for superior precision, durability, and flawless performance in critical operation.'
-    },
-    {
-      title: 'Assembly data prograssive Die  2 stations',
-      discrption: 'Two-station progressive die assembly for efficient and precise component manufacturing.'
-    },
-    {
-      title: 'Bending progressive Assembly Bending',
-      discrption: 'Two-station bending progressive die for streamlined, precise bending and shaping operations.'
-    },
-    {
-      title: 'Bike light cover with punch and civity',
-      discrption: 'Bike light cover with punching and cavity process for precise shaping and durability.'
-    },
-    {
-      title: 'Tank cover part',
-      discrption: 'Tank cover part designed for durability and perfect fit, ensuring optimal protection and performance.'
-    },
-    {
-      title: 'Banding Lower Die',
-      discrption: 'Precision-crafted banding lower die, ensuring optimal performance, durability, and reliability for mechanical applications.'
-    },
-  ];
-
-  // Clear previous content
-  projects.innerHTML = '';
-
-  // Iterate over projectData and build HTML for each project
-  projectData.forEach(project => {
-    let projectHTML = `
-      <div class="col-lg-6">
-        <div class="card mb-3 border-0" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4 py-1">
-              <img src="images/${project.title}.jpeg" class="img-fluid" alt="${project.title}" />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title fw-bold text-uppercase">${project.title}</h5>
-                <p class="card-text">
-                  ${project.discrption}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    // Append the HTML for this project
-    projects.innerHTML += projectHTML;
-  });
-}
-
-// Call the function to render projects
-renderProjects();
