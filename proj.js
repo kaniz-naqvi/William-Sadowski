@@ -216,10 +216,11 @@ function renderOverlay(project) {
   }
 }
 
-// Close overlay
-document.querySelector(".overlay-cross").addEventListener("click", () => {
-  document.querySelector("#overlay").style.display = "none";
-});
-
+// Close overlay when cross button is clicked
+if (document.querySelector(".overlay-cross")) {
+  document.querySelector(".overlay-cross").addEventListener("click", () => {
+    document.querySelector("#overlay").style.display = "none";
+  });
+}
 // Call the function to render projects
 renderProjects();
