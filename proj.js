@@ -1,8 +1,3 @@
-
-
-
-
-
 // Function to dynamically add projects to the 'projects' section
 function renderProjects() {
   let projects = document.querySelector("#projects .row");
@@ -77,8 +72,14 @@ function renderProjects() {
       otherText: " View details",
       overlay: true,
     },
+    {
+      title: "Precise Shaping and Piercing Bending Punch Process",
+      discrption:
+        "Advanced punching for precise shaping and accurate hole formation.",
+      otherText: " View details",
+      overlay: true,
+    },
   ];
-
 
   // Clear previous content
   projects.innerHTML = "";
@@ -170,6 +171,47 @@ function renderOverlay(project) {
       `;
     });
 
+    overlayDiv.innerHTML = overlayHTML;
+  }
+  else if(project.title === "Precise Shaping and Piercing Bending Punch Process"){
+    let projDetails = [
+      {
+        title: "Operation One",
+        discrption: "Part file creation for accurate design and structure.",
+      },
+      {
+        title: "Operation Two",
+        discrption: "Bending punch with piercing for precise shaping and hole formation.",
+      },
+      {
+        title: "Operation Three",
+        discrption: "Bending punch roughing for material removal and initial shaping.",
+      },
+      {
+        title: "Operation Four",
+        discrption: "Second side hole making for perfect alignment and fit.",
+      },
+    ];
+
+    projDetails.forEach((detail) => {
+      overlayHTML += `
+        <div class="col-lg-6 text-white">
+          <div class="card text-white mb-3 border-0" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 py-1">
+                <img src="images/${detail.title}.jpeg" class="img-fluid" alt="${detail.title}" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">${detail.title}</h5>
+                  <p>${detail.discrption}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
     overlayDiv.innerHTML = overlayHTML;
   }
 }
